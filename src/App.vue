@@ -45,8 +45,10 @@ export default {
 </style>
 
 <style scoped lang="scss">
-// importo variabili
-// @use './styles/partials/variables' as *;
+main {
+	background-image: url(../public/immagini/body-bg.jpg);
+	background-size: cover;
 
-// ...qui eventuale SCSS di App.vue
+
+}
 </style>

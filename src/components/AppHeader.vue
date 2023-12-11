@@ -34,7 +34,7 @@ export default {
         </div>
 
         <div class="headerBottom">
-            <img class="logo" src="../../public/assets/logo.png" alt="">
+            <img class="logo" src="../../public/immagini/logo.png" alt="">
             <nav class="navLinks">
                 <ul>
                     <li><a href="#">blabla</a></li>
