@@ -1,12 +1,18 @@
 <script>
 import AppComponent from "./components/AppComponent.vue"
+import AppHeader from "./components/AppHeader.vue"
+import AppMain from "./components/AppMain.vue"
+import AppFooter from "./components/AppFooter.vue"
 
-import axios from 'axios'; //importo Axios
+
 import { store } from "./store.js" //state management
 
 export default {
 	components: {
-		AppComponent
+		AppComponent,
+		AppHeader,
+		AppMain,
+		AppFooter,
 	},
 	data() {
 		return {
@@ -16,11 +22,6 @@ export default {
 	mounted() {
 		this.doThings();
 
-		// axios.get("indirizzo").then(risultato => {
-		// 	console.log(risultato);
-		// }).catch(errore => {
-		// 	console.error(errore);
-		// });
 	},
 	methods: {
 		doThings() {
@@ -32,7 +33,9 @@ export default {
 
 <template>
 	<main>
-		<AppComponent />
+		<AppHeader />
+		<AppMain />
+		<AppFooter />
 	</main>
 </template>
 
