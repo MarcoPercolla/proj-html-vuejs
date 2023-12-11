@@ -32,11 +32,11 @@ export default {
 </script>
 
 <template>
+	<AppHeader />
 	<main>
-		<AppHeader />
 		<AppMain />
-		<AppFooter />
 	</main>
+	<AppFooter />
 </template>
 
 <style lang="scss">
@@ -49,7 +49,4 @@ export default {
 // @use './styles/partials/variables' as *;
 
 // ...qui eventuale SCSS di App.vue
-main {
-	padding: 1rem;
-}
 </style>
