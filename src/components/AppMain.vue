@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-    <AppBigSlider />
+    <AppBigSlider :catalog="store.slides1" />
 
     <section>
         <div class="container">

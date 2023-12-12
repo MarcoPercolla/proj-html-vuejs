@@ -3,6 +3,7 @@ import { store } from "../store.js" //state management
 
 
 export default {
+    props: ["catalog"],
     name: "AppBigSlider",
     data() {
         return {
@@ -15,7 +16,7 @@ export default {
             console.log("AppBigSlider does things");
         },
         back() {
-            let indiceUltimaImg = store.slides1.length - 1;
+            let indiceUltimaImg = this.catalog.length - 1;
 
             if (this.slideNumber > 0) {
                 this.slideNumber--;
@@ -24,7 +25,7 @@ export default {
             }
         },
         next() {
-            let indiceUltimaImg = store.slides1.length - 1;
+            let indiceUltimaImg = this.catalog.length - 1;
 
             if (this.slideNumber < indiceUltimaImg) {
                 this.slideNumber++;
@@ -43,8 +44,7 @@ export default {
 <template>
     <div>
         <div class="jumboCarousel">
-            <div id="carouselElement" :class="i == slideNumber ? `visible` : `invisible`"
-                v-for="(slide, i) in store.slides1">
+            <div id="carouselElement" :class="i == slideNumber ? `visible` : `invisible`" v-for="(slide, i) in catalog">
 
                 <img :src="slide.immagine" alt="">
                 <h2>{{ slide.titolo }}</h2>
@@ -61,7 +61,7 @@ export default {
 
 <style scoped lang="scss">
 .jumboCarousel {
-    width: 99%;
+    width: 100%;
     height: 35rem;
     background-color: aqua;
 }
