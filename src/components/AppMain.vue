@@ -1,9 +1,14 @@
 <script>
 import { store } from "../store.js" //state management
+import AppBigSlider from "./AppBigSlider.vue"
 
 
 export default {
     name: "AppMain",
+    components: {
+        AppBigSlider,
+
+    },
     data() {
         return {
             store
@@ -22,7 +27,7 @@ export default {
 </script>
 
 <template>
-    <div class="jumbo"></div>
+    <AppBigSlider />
 
     <section>
         <div class="container">
@@ -172,12 +177,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.jumbo {
-    width: 99%;
-    height: 35rem;
-    background-color: aqua;
-}
-
 section {
     text-align: center;
 }
