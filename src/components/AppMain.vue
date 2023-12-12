@@ -1,13 +1,16 @@
 <script>
 import { store } from "../store.js" //state management
 import AppBigSlider from "./AppBigSlider.vue"
+import AppDoubleBanner from "./AppDoubleBanner.vue"
+
 
 
 export default {
     name: "AppMain",
     components: {
         AppBigSlider,
-
+        AppDoubleBanner,
+        AppDoubleBanner
     },
     data() {
         return {
@@ -66,13 +69,7 @@ export default {
 
 
 
-    <section>
-        <div class="container">
-            <img class="type1" src="" alt="">
-            <img class="type1" src="" alt="">
-        </div>
-
-    </section>
+    <AppDoubleBanner :catalog="store.slides2" />
 
 
 
@@ -179,6 +176,7 @@ export default {
 <style scoped lang="scss">
 section {
     text-align: center;
+
 }
 
 .container {
