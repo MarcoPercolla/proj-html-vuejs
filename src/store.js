@@ -29,18 +29,18 @@ export const store = reactive({
     ],
     slides3: [
         {
-            immagine: '/immagini/cms-banner-01.jpg',
-            titolo: 'The battelfield 4 Naval strike',
+            immagine: '/immagini/category-image-02-446x550_t.jpg',
+            titolo: 'Batman',
 
         },
         {
-            immagine: '/immagini/cms-banner-02.jpg',
-            titolo: 'Assassins Creed unity game',
+            immagine: '/immagini/category-image-01-446x550_t.jpg',
+            titolo: 'Bayonetta',
 
         },
         {
-            immagine: '/immagini/cms-banner-02.jpg',
-            titolo: 'Assassins Creed unity game',
+            immagine: '/immagini/category-image-03-446x550_t.jpg',
+            titolo: 'Dark Souls',
 
         },
 

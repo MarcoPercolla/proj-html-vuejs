@@ -26,6 +26,11 @@ export default {
     <div class="container">
         <div class="card" v-for="slide in catalog">
             <img class="type2" :src="slide.immagine" alt="">
+            <div>
+                <h3>{{ slide.titolo }}</h3>
+
+            </div>
+
 
         </div>
 
@@ -44,6 +49,18 @@ export default {
 .card {
     width: 32.3%;
     height: 30rem;
+    position: relative;
+
+    >div {
+        position: absolute;
+        bottom: 0;
+        height: 5rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.384);
+        padding: 1rem 0.5rem;
+        text-align: left;
+
+    }
 
 
 }
