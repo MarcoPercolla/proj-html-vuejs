@@ -2,6 +2,7 @@
 import { store } from "../store.js" //state management
 import AppBigSlider from "./AppBigSlider.vue"
 import AppDoubleBanner from "./AppDoubleBanner.vue"
+import AppTripleBanner from "./AppTripleBanner.vue"
 
 
 
@@ -10,7 +11,8 @@ export default {
     components: {
         AppBigSlider,
         AppDoubleBanner,
-        AppDoubleBanner
+        AppDoubleBanner,
+        AppTripleBanner
     },
     data() {
         return {
@@ -76,12 +78,8 @@ export default {
     <section>
         <h2>special Category</h2>
 
-        <div class="container">
-            <img class="type2" src="" alt="">
-            <img class="type2" src="" alt="">
-            <img class="type2" src="" alt="">
+        <AppTripleBanner :catalog="store.slides3" />
 
-        </div>
 
     </section>
 

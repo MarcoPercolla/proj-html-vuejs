@@ -27,6 +27,24 @@ export const store = reactive({
         },
 
     ],
+    slides3: [
+        {
+            immagine: '/immagini/cms-banner-01.jpg',
+            titolo: 'The battelfield 4 Naval strike',
+
+        },
+        {
+            immagine: '/immagini/cms-banner-02.jpg',
+            titolo: 'Assassins Creed unity game',
+
+        },
+        {
+            immagine: '/immagini/cms-banner-02.jpg',
+            titolo: 'Assassins Creed unity game',
+
+        },
+
+    ],
     slides5: [
         {
             immagine: '/immagini/cms-banner-03.jpg',
