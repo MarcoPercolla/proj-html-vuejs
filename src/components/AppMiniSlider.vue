@@ -8,7 +8,7 @@ export default {
     data() {
         return {
             store,
-            slideInvisible: this.catalog.length - 1,
+            slidevisible: [0, 1, 2, 3, 4],
         }
     },
     methods: {
@@ -16,18 +16,25 @@ export default {
             console.log("AppMiniSlider does things");
         },
         back() {
+            if (!(this.slidevisible.includes(0))) {
+                this.slidevisible.splice(4, 1);
+                this.slidevisible.splice(0, 0, this.slidevisible[0] - 1)
 
-
-            if (this.slideInvisible == 0) {
-                this.slideInvisible = this.catalog.length - 1;
             }
+
+
         },
         next() {
+            if (!(this.slidevisible.includes(this.catalog.length - 1))) {
+
+                this.slidevisible.push(this.slidevisible[4] + 1);
+                this.slidevisible.splice(0, 1)
 
 
-            if (this.slideInvisible == this.catalog.length - 1) {
-                this.slideInvisible = 0;
             }
+
+
+
         },
     },
     mounted() {
@@ -39,7 +46,7 @@ export default {
 
 <template>
     <div class="container2">
-        <div class="sponsorCard" v-for="(slide, i) in catalog" v-show="i != this.slideInvisible">
+        <div class="sponsorCard" v-for="(slide, i) in catalog" v-show="this.slidevisible.includes(i)">
             <img :src="slide.immagine" alt="">
         </div>
         <button class="btn1" @click="back()">indietro</button>
