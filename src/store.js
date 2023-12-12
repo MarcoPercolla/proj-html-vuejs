@@ -27,4 +27,17 @@ export const store = reactive({
         },
 
     ],
+    slides5: [
+        {
+            immagine: '/immagini/cms-banner-03.jpg',
+            titolo: 'Dragon Dogma Video Game',
+
+        },
+        {
+            immagine: '/immagini/cms-banner-04.jpg',
+            titolo: 'World of tanks New Game',
+
+        },
+
+    ],
 });

@@ -99,13 +99,7 @@ export default {
 
     </section>
 
-    <section>
-        <div class="container">
-            <img class="type1" src="" alt="">
-            <img class="type1" src="" alt="">
-        </div>
-
-    </section>
+    <AppDoubleBanner :catalog="store.slides5" />
 
     <section>
         <h2>Deal of the day</h2>
