@@ -58,4 +58,28 @@ export const store = reactive({
         },
 
     ],
+    slides8: [
+        {
+            immagine: '/immagini/brand-01.png',
+
+        },
+        {
+            immagine: '/immagini/brand-02.png',
+
+        },
+        {
+            immagine: '/immagini/brand-03.png',
+        },
+        {
+            immagine: '/immagini/brand-04.png',
+        },
+        {
+            immagine: '/immagini/brand-05.png',
+        },
+        {
+            immagine: '/immagini/brand-01.png',
+        },
+
+
+    ],
 });

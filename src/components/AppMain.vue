@@ -3,6 +3,7 @@ import { store } from "../store.js" //state management
 import AppBigSlider from "./AppBigSlider.vue"
 import AppDoubleBanner from "./AppDoubleBanner.vue"
 import AppTripleBanner from "./AppTripleBanner.vue"
+import AppMiniSlider from "./AppMiniSlider.vue"
 
 
 
@@ -12,7 +13,8 @@ export default {
         AppBigSlider,
         AppDoubleBanner,
         AppDoubleBanner,
-        AppTripleBanner
+        AppTripleBanner,
+        AppMiniSlider,
     },
     data() {
         return {
@@ -128,40 +130,7 @@ export default {
     </section>
 
     <section>
-        <div class="container">
-            <div class="sponsorCard">
-                <img src="" alt="">
-                <div>
-                    <h4>blabla</h4>
-                </div>
-            </div>
-            <div class="sponsorCard">
-                <img src="" alt="">
-                <div>
-                    <h4>blabla</h4>
-                </div>
-            </div>
-            <div class="sponsorCard">
-                <img src="" alt="">
-                <div>
-                    <h4>blabla</h4>
-                </div>
-            </div>
-            <div class="sponsorCard">
-                <img src="" alt="">
-                <div>
-                    <h4>blabla</h4>
-                </div>
-            </div>
-            <div class="sponsorCard">
-                <img src="" alt="">
-                <div>
-                    <h4>blabla</h4>
-                </div>
-            </div>
-
-        </div>
-
+        <AppMiniSlider :catalog="store.slides8" />
     </section>
 </template>
 
@@ -222,22 +191,5 @@ section {
 .fullWide {
     height: 20rem;
     background-color: red;
-}
-
-.sponsorCard {
-    display: flex;
-    align-items: center;
-
-    >img {
-        background-color: rgb(200, 255, 0);
-        height: 3rem;
-        width: 3rem;
-
-
-    }
-
-    >div {
-        margin: 0 1rem;
-    }
 }
 </style>
