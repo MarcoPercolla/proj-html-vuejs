@@ -6,17 +6,25 @@ export default {
     name: "AppHeader",
     data() {
         return {
-            store
+            store,
+            navIndex: 100,
         }
     },
     methods: {
-        doThings() {
-            console.log("AppHeader does things");
+        toggle(n) {
+            if (this.navIndex == n) {
+                this.navIndex = 1000
+
+            } else {
+                this.navIndex = n
+
+            }
+
         }
     },
     mounted() {
 
-        this.doThings();
+
     }
 }
 </script>
@@ -36,11 +44,35 @@ export default {
         <div class="headerBottom">
             <img class="logo" src="../../public/immagini/logo.png" alt="">
             <nav class="navLinks">
-                <ul>
-                    <li v-for="el in store.headerArray">
-                        <a href="#">{{ el.link }}</a>
-                        <div v-if="el.descrizione" v-for="subEl in el.descrizione">{{ subEl }}</div>
-                        <div v-else v-for="subEl2 in el.descrizione2">{{ subEl2.nome1 }} {{ subEl2.nome2 }}</div>
+                <ul class="navContainer">
+                    <li class="linkList" v-for="(el, i) in store.headerArray" @click="toggle(i)">
+                        <a class="listName" href="#">{{ el.link }}</a>
+                        <div class="tenda">
+                            <div class="tendina" v-if="el.descrizione" v-for="(subEl) in el.descrizione"
+                                :class="this.navIndex == i ? `opened` : `closed`">
+
+                                <a class="tendinaLink" href="">{{ subEl }}</a>
+                            </div>
+                            <div class="doppiaTendina" v-if="el.descrizione2" v-for="subEl2 in el.descrizione2"
+                                :class="this.navIndex == i ? `opened2` : `closed`">
+                                <div>
+                                    <h5>{{ subEl2.nome1 }}</h5>
+                                    <ul>
+                                        <li v-for="sublink in subEl2.gallery"><a href="">{{ sublink }}</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5>{{ subEl2.nome2 }}</h5>
+                                    <ul>
+
+                                        <li v-for="sublink in subEl2.portfolio"><a href="">{{ sublink }}</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </li>
 
                 </ul>
@@ -68,12 +100,11 @@ export default {
     justify-content: space-between;
     border-bottom: solid grey 1px;
     color: grey;
+
 }
 
 .headerFidget {
     display: flex;
-
-
 
 }
 
@@ -88,6 +119,7 @@ hr {
     justify-content: space-between;
     padding: 0 5rem;
 
+
 }
 
 .logo {
@@ -100,19 +132,25 @@ hr {
     display: flex;
     justify-content: space-between;
 
-    ul {
+
+    >.navContainer {
         list-style: none;
         display: flex;
 
-        a {
+        .listName {
             text-decoration: none;
             color: #ffffff;
-            margin: 0 0.5rem;
+            padding: 0 1.5rem;
+
         }
     }
 }
 
+.navContainer {
+    list-style: none;
+    display: flex;
 
+}
 
 .navIcons {
     display: flex;
@@ -122,5 +160,58 @@ hr {
         color: #ffffff;
         margin: 0 0.5rem;
     }
+}
+
+.tenda {
+    position: absolute;
+}
+
+.tendina {
+    background-color: red;
+    width: 6rem;
+    padding: 0.5rem;
+    z-index: 999;
+    position: relative;
+    top: 1rem
+}
+
+.tendinaLink {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 0;
+
+}
+
+.doppiaTendina {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    width: 8rem;
+    z-index: 998;
+    position: relative;
+    top: 1rem;
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0.5rem 0;
+    }
+
+    ul {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+.closed {
+    display: none;
+}
+
+.opened {
+    display: block;
+}
+
+.opened2 {
+    display: flex;
 }
 </style>
