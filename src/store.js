@@ -110,4 +110,52 @@ export const store = reactive({
 
 
     ],
+    headerArray: [
+        {
+            link: 'home',
+            descrizione: '',
+
+        },
+        {
+            link: 'shop',
+            descrizione: ['Top Rated Product', 'Product Category'],
+
+        },
+        {
+            link: 'Blog',
+            descrizione: ['Left Sidebar', 'Right sidebar', 'Sidebar'],
+
+        },
+        {
+            link: 'Media',
+            descrizione: [
+                {
+                    gallery: ['2', '3', '4'],
+                    portfolio: ['2', '3', '4'],
+
+                }
+            ],
+
+        },
+        {
+            link: 'ShortCode',
+            descrizione: [
+                {
+                    gallery: ['2', '3', '4'],
+                    portfolio: ['2', '3', '4'],
+
+                }
+            ],
+
+        },
+        {
+            link: 'Faq',
+            descrizione: ['Top Rated Product', 'Product Category', 'Left Sidebar', 'Right sidebar', 'Sidebar'],
+
+        },
+
+
+
+    ],
+
 });

@@ -141,7 +141,7 @@ h2 {
 
     25% {
         scale: 0.7;
-        opacity: 0.8;
+        opacity: 1;
         // transform: rotate3d(1, 0, 0, 65deg);
         filter: brightness(0.6);
 
