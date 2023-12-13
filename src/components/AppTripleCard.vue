@@ -60,6 +60,14 @@ export default {
             <div class="card" v-for="(slide, i) in catalog"
                 :class="this.slidevisible.includes(i) ? `visible` : `invisible`">
                 <img class="type4" :src="slide.immagine" alt="">
+                <div class="info">
+                    <img src="" alt="">
+                    <p>{{ slide.data }}</p>
+                    <img src="" alt="">
+                    <p>{{ slide.commenti }} comment </p>
+
+                </div>
+                <h4>{{ slide.descrizione }}</h4>
 
             </div>
             <button class="btn1" @click="back()">indietro</button>
@@ -81,9 +89,10 @@ section {
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
     width: 80%;
     margin: 3rem auto;
+    position: relative;
 }
 
 .card {
@@ -105,6 +114,33 @@ section {
 .invisible {
     opacity: 0;
     position: absolute;
+
+}
+
+.btn1 {
+    position: absolute;
+    top: 6.5rem;
+    left: -4rem;
+}
+
+.btn2 {
+    position: absolute;
+    top: 6.5rem;
+    right: -4rem;
+}
+
+.info {
+    height: 1.5rem;
+    margin: 0.4rem 0;
+    display: flex;
+    align-items: center;
+
+    img {
+        background-color: red;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        margin: 0 0.3rem;
+    }
 
 }
 </style>

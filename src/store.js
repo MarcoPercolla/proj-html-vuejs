@@ -82,70 +82,70 @@ export const store = reactive({
     ],
     slides7: [
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Rerum-facilis-est-et-exped-1400x878_t.jpg',
             data: 'jan 18/2021',
             commenti: 2,
             descrizione: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Omnis-iste-natus-error-sit.jpg',
             data: 'jan 18/2021',
             commenti: 0,
             descrizione: ' by injected humour, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Nisi-ut-aliquid-ex-ea-com-1400x878_t.jpg',
             data: 'jan 18/2021',
             commenti: 4,
             descrizione: 'There are many variations of passages of Lorem Ipsum available'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Laborum-et-dolor-fuga-Et.jpg',
             data: 'jan 18/2021',
             commenti: 2,
             descrizione: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Illo-inventore-veritatis-quasi.jpg',
             data: 'jan 18/2021',
             commenti: 0,
             descrizione: ' by injected humour, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Et-quasi-architecto-beate.jpg',
             data: 'jan 18/2021',
             commenti: 4,
             descrizione: 'There are many variations of passages of Lorem Ipsum available'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Consequunt-magni-dolores.jpg',
             data: 'jan 18/2021',
             commenti: 2,
             descrizione: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Blandit-praesen-volupta.jpg',
             data: 'jan 18/2021',
             commenti: 0,
             descrizione: ' by injected humour, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/At-vero-eos-et-accusamus.jpg',
             data: 'jan 18/2021',
             commenti: 4,
             descrizione: 'There are many variations of passages of Lorem Ipsum available'
 
         },
         {
-            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            immagine: 'public/immagini/Architecto-beatae-vitae-dicta.jpg',
             data: 'jan 18/2021',
             commenti: 4,
             descrizione: 'There are many variations of passages of Lorem Ipsum available'

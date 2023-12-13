@@ -3,6 +3,7 @@ import { store } from "../store.js" //state management
 
 
 export default {
+    props: ["catalog"],
     name: "AppFooter",
     data() {
         return {
