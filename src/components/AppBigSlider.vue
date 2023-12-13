@@ -64,11 +64,13 @@ export default {
     width: 100%;
     height: 35rem;
     position: relative;
+    perspective: 800px;
 }
 
 #carouselElement {
     width: 100%;
     height: 35rem;
+
 
 }
 
@@ -100,7 +102,8 @@ h2 {
         scale: 0.9;
         top: -30%;
         opacity: 0.6;
-        rotate: x 90deg;
+        // rotate: x 90deg;
+        transform: rotate3d(1, 0, 0, 90deg);
     }
 
     25% {
@@ -131,43 +134,52 @@ h2 {
 @keyframes ruota2 {
     0% {
         scale: 0.9;
-        top: 0;
-        opacity: 1;
-        rotate: x 55deg;
+        top: 15%;
+        opacity: 0;
 
     }
 
     25% {
+        scale: 0.7;
 
-        opacity: 1;
-        rotate: x 65deg;
+
+        opacity: 0.5;
+        // transform: rotate3d(1, 0, 0, 65deg);
+
         filter: brightness(0.6);
+
     }
 
     50% {
-
         scale: 0.7;
-        opacity: 0.1;
-        rotate: x 75deg;
-        filter: brightness(0.2);
+        opacity: 0;
+        // transform: rotate3d(1, 0, 0, 75deg);
 
+
+
+        top: 9rem;
 
     }
 
     75% {
-        top: 10rem;
+
         opacity: 0;
-        rotate: x 110deg;
-        filter: brightness(0);
+        // transform: rotate3d(1, 0, 0, 110deg);
+        transform: rotate3d(1, 0, 0, -90deg);
+
+
 
 
     }
 
+
+
+
+
     100% {
         scale: 1;
-        top: 0;
-        opacity: 0;
 
+        opacity: 0;
 
 
     }
