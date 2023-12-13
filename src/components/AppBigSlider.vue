@@ -91,7 +91,7 @@ h2 {
     opacity: 1;
     position: absolute;
     top: 0;
-    animation: ruota 1s;
+    animation: ruota 1.5s;
 
 
 
@@ -134,24 +134,21 @@ h2 {
 @keyframes ruota2 {
     0% {
         scale: 0.9;
-        top: 15%;
-        opacity: 0;
+        top: 3rem;
+        opacity: 1;
 
     }
 
     25% {
         scale: 0.7;
-
-
-        opacity: 0.5;
+        opacity: 0.8;
         // transform: rotate3d(1, 0, 0, 65deg);
-
         filter: brightness(0.6);
 
     }
 
     50% {
-        scale: 0.7;
+        scale: 0.5;
         opacity: 0;
         // transform: rotate3d(1, 0, 0, 75deg);
 
@@ -189,7 +186,7 @@ h2 {
     opacity: 0;
     position: absolute;
     top: 0;
-    animation: ruota2 1s;
+    animation: ruota2 1.5s;
 
 
 
