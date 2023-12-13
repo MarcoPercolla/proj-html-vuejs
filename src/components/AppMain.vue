@@ -190,6 +190,9 @@ section {
 
 .fullWide {
     height: 20rem;
-    background-color: red;
+    background: url('public/immagini/parallax.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 </style>
