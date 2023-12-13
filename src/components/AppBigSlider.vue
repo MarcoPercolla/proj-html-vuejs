@@ -147,7 +147,7 @@ h2 {
         scale: 0.7;
         opacity: 0.1;
         rotate: x 75deg;
-        filter: brightness(0.6);
+
 
     }
 

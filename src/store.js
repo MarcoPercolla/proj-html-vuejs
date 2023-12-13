@@ -58,6 +58,27 @@ export const store = reactive({
         },
 
     ],
+    slides6: [
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            titolo: 'lavoratore',
+            descrizione: 'bla bla bla bla bla bla bla bla'
+
+        },
+        {
+            immagine: 'public/immagini/t4-1-100x100_left.jpg',
+            titolo: 'lavoratore',
+            descrizione: 'bla bla bla bla bla bla bla bla'
+
+        },
+        {
+            immagine: 'public/immagini/t5-1-100x100_left.jpg',
+            titolo: 'lavoratore',
+            descrizione: 'bla bla bla bla bla bla bla bla'
+
+        },
+
+    ],
     slides8: [
         {
             immagine: '/immagini/brand-01.png',

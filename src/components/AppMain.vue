@@ -4,6 +4,8 @@ import AppBigSlider from "./AppBigSlider.vue"
 import AppDoubleBanner from "./AppDoubleBanner.vue"
 import AppTripleBanner from "./AppTripleBanner.vue"
 import AppMiniSlider from "./AppMiniSlider.vue"
+import AppPortfolioSlider from "./AppPortfolioSlider.vue"
+
 
 
 
@@ -15,6 +17,8 @@ export default {
         AppDoubleBanner,
         AppTripleBanner,
         AppMiniSlider,
+        AppPortfolioSlider,
+
     },
     data() {
         return {
@@ -115,7 +119,9 @@ export default {
 
     </section>
 
-    <section class="fullWide"></section>
+    <section class="fullWide">
+        <AppPortfolioSlider :catalog="store.slides6" />
+    </section>
 
     <section>
         <h2>special Category</h2>
@@ -194,5 +200,6 @@ section {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding: 3rem;
 }
 </style>
