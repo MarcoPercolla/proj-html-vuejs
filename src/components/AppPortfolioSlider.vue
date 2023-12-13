@@ -33,9 +33,8 @@ export default {
         <h5>{{ slide.descrizione }}</h5>
     </div>
     <div>
-        <button @click="chose(0)"></button>
-        <button @click="chose(1)"></button>
-        <button @click="chose(2)"></button>
+        <button v-for="(slide, i) in catalog" @click="chose(i)"></button>
+
     </div>
 </template>
 
