@@ -37,12 +37,12 @@ export default {
             <img class="logo" src="../../public/immagini/logo.png" alt="">
             <nav class="navLinks">
                 <ul>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
+                    <li v-for="el in store.headerArray">
+                        <a href="#">{{ el.link }}</a>
+                        <div v-if="el.descrizione" v-for="subEl in el.descrizione">{{ subEl }}</div>
+                        <div v-else v-for="subEl2 in el.descrizione2">{{ subEl2.nome1 }} {{ subEl2.nome2 }}</div>
+                    </li>
+
                 </ul>
                 <div class="navIcons">
 

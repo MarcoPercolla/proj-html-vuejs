@@ -113,7 +113,7 @@ export const store = reactive({
     headerArray: [
         {
             link: 'home',
-            descrizione: '',
+
 
         },
         {
@@ -128,8 +128,10 @@ export const store = reactive({
         },
         {
             link: 'Media',
-            descrizione: [
+            descrizione2: [
                 {
+                    nome1: 'gallery',
+                    nome2: 'portfolio',
                     gallery: ['2', '3', '4'],
                     portfolio: ['2', '3', '4'],
 
@@ -139,8 +141,10 @@ export const store = reactive({
         },
         {
             link: 'ShortCode',
-            descrizione: [
+            descrizione2: [
                 {
+                    nome1: 'gallery',
+                    nome2: 'portfolio',
                     gallery: ['2', '3', '4'],
                     portfolio: ['2', '3', '4'],
 
