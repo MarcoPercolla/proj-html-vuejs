@@ -34,7 +34,7 @@ export default {
 </script>
 
 <template>
-	<AppHeader />
+	<AppHeader :catalog="store.headerArray" />
 	<main>
 		<AppMain />
 	</main>

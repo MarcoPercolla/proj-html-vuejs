@@ -3,6 +3,7 @@ import { store } from "../store.js" //state management
 
 
 export default {
+    props: ["catalog"],
     name: "AppHeader",
     data() {
         return {
@@ -45,7 +46,7 @@ export default {
             <img class="logo" src="../../public/immagini/logo.png" alt="">
             <nav class="navLinks">
                 <ul class="navContainer">
-                    <li class="linkList" v-for="(el, i) in store.headerArray" @click="toggle(i)">
+                    <li class="linkList" v-for="(el, i) in catalog" @click="toggle(i)">
                         <a class="listName" href="#">{{ el.link }}</a>
                         <div class="tenda">
                             <div class="tendina" v-if="el.descrizione" v-for="(subEl) in el.descrizione"
