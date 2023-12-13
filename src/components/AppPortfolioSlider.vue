@@ -14,7 +14,10 @@ export default {
     methods: {
         doThings() {
             console.log("AppPortfolio does things");
-        }
+        },
+        chose(n) {
+            this.currentSlide = n;
+        },
     },
     mounted() {
 
@@ -28,6 +31,11 @@ export default {
         <img :src="slide.immagine" alt="">
         <h4>{{ slide.titolo }}</h4>
         <h5>{{ slide.descrizione }}</h5>
+    </div>
+    <div>
+        <button @click="chose(0)"></button>
+        <button @click="chose(1)"></button>
+        <button @click="chose(2)"></button>
     </div>
 </template>
 

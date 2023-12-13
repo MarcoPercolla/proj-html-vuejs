@@ -195,7 +195,7 @@ section {
 }
 
 .fullWide {
-    height: 20rem;
+    height: 30rem;
     background: url('public/immagini/parallax.jpg');
     background-size: cover;
     background-attachment: fixed;
