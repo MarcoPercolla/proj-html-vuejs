@@ -109,15 +109,8 @@ export default {
 }
 
 .invisible {
-
     opacity: 0;
-
-
     position: absolute;
-
-
-
-
 
 }
 </style>
