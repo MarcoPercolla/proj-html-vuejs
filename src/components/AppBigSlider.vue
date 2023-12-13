@@ -63,13 +63,13 @@ export default {
 .jumboCarousel {
     width: 100%;
     height: 35rem;
-    background-color: aqua;
+    position: relative;
 }
 
 #carouselElement {
     width: 100%;
     height: 35rem;
-    position: relative;
+
 }
 
 img {
@@ -86,12 +86,94 @@ h2 {
 }
 
 .visible {
-    display: block;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    animation: ruota 1s;
+
+
+
+}
+
+@keyframes ruota {
+    0% {
+        scale: 0.9;
+        top: -30%;
+        opacity: 0.6;
+        rotate: x 90deg;
+    }
+
+    25% {
+
+        opacity: 0.7;
+
+    }
+
+    50% {
+        scale: 0.7;
+        opacity: 0.8;
+
+    }
+
+    75% {
+        opacity: 0.9;
+
+    }
+
+    100% {
+        scale: 1;
+        top: 0;
+        opacity: 1;
+
+    }
+}
+
+@keyframes ruota2 {
+    0% {
+        scale: 0.9;
+        top: 0;
+        opacity: 1;
+        rotate: x 55deg;
+    }
+
+    25% {
+
+        opacity: 1;
+        rotate: x 65deg;
+    }
+
+    50% {
+
+        scale: 0.7;
+        opacity: 1;
+        rotate: x 75deg;
+    }
+
+    75% {
+        top: 10rem;
+        opacity: 0;
+        rotate: x 90deg;
+    }
+
+    100% {
+        scale: 1;
+        top: 0;
+        opacity: 0;
+
+    }
 }
 
 .invisible {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    animation: ruota2 1s;
+
+
+
 }
+
+
 
 .btn1 {
     position: absolute;

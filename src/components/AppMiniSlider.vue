@@ -20,6 +20,10 @@ export default {
                 this.slidevisible.splice(4, 1);
                 this.slidevisible.splice(0, 0, this.slidevisible[0] - 1)
 
+            } else {
+
+                this.slidevisible = [(this.catalog.length - 5), (this.catalog.length - 4), (this.catalog.length - 3), (this.catalog.length - 2), (this.catalog.length - 1)];
+
             }
 
 
@@ -29,6 +33,10 @@ export default {
 
                 this.slidevisible.push(this.slidevisible[4] + 1);
                 this.slidevisible.splice(0, 1)
+
+
+            } else {
+                this.slidevisible = [0, 1, 2, 3, 4];
 
 
             }
@@ -46,7 +54,8 @@ export default {
 
 <template>
     <div class="container2">
-        <div class="sponsorCard" v-for="(slide, i) in catalog" v-show="this.slidevisible.includes(i)">
+        <div class="sponsorCard" v-for="(slide, i) in catalog"
+            :class="this.slidevisible.includes(i) ? `visible` : `invisible`">
             <img :src="slide.immagine" alt="">
         </div>
         <button class="btn1" @click="back()">indietro</button>
@@ -58,9 +67,10 @@ export default {
 <style scoped lang="scss">
 .container2 {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    width: 80%;
+    padding: 3rem 10%;
     margin: 3rem auto;
     flex-shrink: 0;
     overflow: hidden;
@@ -69,8 +79,7 @@ export default {
 
 .sponsorCard {
     width: 20%;
-
-
+    height: 7rem;
 
 
     >img {
@@ -84,13 +93,31 @@ export default {
 
 .btn1 {
     position: absolute;
-    top: 2rem;
-    left: 1rem;
+    top: 6.5rem;
+    left: 6rem;
 }
 
 .btn2 {
     position: absolute;
-    top: 2rem;
-    right: 1rem;
+    top: 6.5rem;
+    right: 6rem;
+}
+
+.visible {
+    transition: 1s;
+    opacity: 1;
+}
+
+.invisible {
+
+    opacity: 0;
+
+
+    position: absolute;
+
+
+
+
+
 }
 </style>

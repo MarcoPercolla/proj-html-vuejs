@@ -77,6 +77,12 @@ export const store = reactive({
             immagine: '/immagini/brand-05.png',
         },
         {
+            immagine: '/immagini/brand-04.png',
+        },
+        {
+            immagine: '/immagini/brand-05.png',
+        },
+        {
             immagine: '/immagini/brand-01.png',
         },
 
