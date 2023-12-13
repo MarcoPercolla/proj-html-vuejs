@@ -62,8 +62,8 @@ export const store = reactive({
     slides6: [
         {
             immagine: 'public/immagini/t2-1-100x100_left.jpg',
-            titolo: 'lavoratore',
-            descrizione: 'bla bla bla bla bla bla bla bla'
+            titolo: 'Web designer',
+            descrizione: '"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available"'
 
         },
         {
@@ -78,6 +78,81 @@ export const store = reactive({
             descrizione: 'bla bla bla bla bla bla bla bla'
 
         },
+
+    ],
+    slides7: [
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 2,
+            descrizione: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 0,
+            descrizione: ' by injected humour, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 4,
+            descrizione: 'There are many variations of passages of Lorem Ipsum available'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 2,
+            descrizione: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 0,
+            descrizione: ' by injected humour, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 4,
+            descrizione: 'There are many variations of passages of Lorem Ipsum available'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 2,
+            descrizione: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 0,
+            descrizione: ' by injected humour, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, There are many variations of passages of Lorem Ipsum available'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 4,
+            descrizione: 'There are many variations of passages of Lorem Ipsum available'
+
+        },
+        {
+            immagine: 'public/immagini/t2-1-100x100_left.jpg',
+            data: 'jan 18/2021',
+            commenti: 4,
+            descrizione: 'There are many variations of passages of Lorem Ipsum available'
+
+        },
+
+
 
     ],
     slides8: [

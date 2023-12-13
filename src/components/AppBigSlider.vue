@@ -62,14 +62,14 @@ export default {
 <style scoped lang="scss">
 .jumboCarousel {
     width: 100%;
-    height: 35rem;
+    height: 40rem;
     position: relative;
     perspective: 800px;
 }
 
 #carouselElement {
     width: 100%;
-    height: 35rem;
+    height: 40rem;
 
 
 }

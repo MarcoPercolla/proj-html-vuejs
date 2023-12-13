@@ -5,6 +5,7 @@ import AppDoubleBanner from "./AppDoubleBanner.vue"
 import AppTripleBanner from "./AppTripleBanner.vue"
 import AppMiniSlider from "./AppMiniSlider.vue"
 import AppPortfolioSlider from "./AppPortfolioSlider.vue"
+import AppTripleCard from "./AppTripleCard.vue"
 
 
 
@@ -18,6 +19,7 @@ export default {
         AppTripleBanner,
         AppMiniSlider,
         AppPortfolioSlider,
+        AppTripleCard,
 
     },
     data() {
@@ -123,17 +125,7 @@ export default {
         <AppPortfolioSlider :catalog="store.slides6" />
     </section>
 
-    <section>
-        <h2>special Category</h2>
-
-        <div class="container">
-            <img class="type4" src="" alt="">
-            <img class="type4" src="" alt="">
-            <img class="type4" src="" alt="">
-
-        </div>
-
-    </section>
+    <AppTripleCard :catalog="store.slides7" />
 
     <section>
         <AppMiniSlider :catalog="store.slides8" />

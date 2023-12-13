@@ -33,7 +33,7 @@ export default {
         <h5>{{ slide.descrizione }}</h5>
     </div>
     <div>
-        <button v-for="(slide, i) in catalog" @click="chose(i)"></button>
+        <button class="choser" v-for="(slide, i) in catalog" @click="chose(i)"> {{ i }} </button>
 
     </div>
 </template>
@@ -50,10 +50,16 @@ h4 {
 }
 
 .visible {
+    margin: 3rem 0;
     display: block;
 }
 
 .invisible {
     display: none;
+}
+
+.choser {
+    margin: 0.5rem;
+
 }
 </style>
