@@ -134,12 +134,14 @@ h2 {
         top: 0;
         opacity: 1;
         rotate: x 55deg;
+
     }
 
     25% {
 
         opacity: 1;
         rotate: x 65deg;
+        filter: brightness(0.6);
     }
 
     50% {
@@ -147,6 +149,7 @@ h2 {
         scale: 0.7;
         opacity: 0.1;
         rotate: x 75deg;
+        filter: brightness(0.2);
 
 
     }
@@ -154,7 +157,9 @@ h2 {
     75% {
         top: 10rem;
         opacity: 0;
-        rotate: x 90deg;
+        rotate: x 110deg;
+        filter: brightness(0);
+
 
     }
 
@@ -162,6 +167,8 @@ h2 {
         scale: 1;
         top: 0;
         opacity: 0;
+
+
 
     }
 }
