@@ -8,10 +8,12 @@ export default {
     data() {
         return {
             store,
+            // --variabile per v-model con input testuale
             input: "",
         }
     },
     methods: {
+        // --metodo per svuotare input al press di enter
         doThings() {
             console.log("AppFooter does things");
             this.input = "";
@@ -45,6 +47,7 @@ export default {
 
         <div class="container lowFoot">
             <p>Copyright © 2023 Codezeel</p>
+            <!-- immagini gestite con image sprites -->
             <div>
                 <img class="payImg" id="visa1" width="1" height="2">
                 <img class="payImg" id="visa2" width="1" height="2">

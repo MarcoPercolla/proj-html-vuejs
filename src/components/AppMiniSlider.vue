@@ -8,6 +8,7 @@ export default {
     data() {
         return {
             store,
+            // --variabile per gestione slide visibili(valori in array == i in v-for)
             slidevisible: [0, 1, 2, 3, 4],
         }
     },
@@ -15,6 +16,7 @@ export default {
         doThings() {
             console.log("AppMiniSlider does things");
         },
+        // --metodi per controllo variabile slidevisible
         back() {
             if (!(this.slidevisible.includes(0))) {
                 this.slidevisible.splice(4, 1);

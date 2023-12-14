@@ -8,6 +8,7 @@ export default {
     data() {
         return {
             store,
+            // --variabile per gestione slide corrente
             slideNumber: 0,
         }
     },
@@ -15,6 +16,7 @@ export default {
         doThings() {
             console.log("AppBigSlider does things");
         },
+        // metodi per gestione variabile slideNumber bindata al oggetto corrente in v-for
         back() {
             let indiceUltimaImg = this.catalog.length - 1;
 

@@ -8,6 +8,7 @@ export default {
     data() {
         return {
             store,
+            // --variabile per conoscere slide corrente
             currentSlide: 0,
         }
     },
@@ -15,6 +16,7 @@ export default {
         doThings() {
             console.log("AppPortfolio does things");
         },
+        // -- metodo per selezionare slide corrente
         chose(n) {
             this.currentSlide = n;
         },

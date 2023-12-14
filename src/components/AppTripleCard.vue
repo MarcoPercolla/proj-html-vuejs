@@ -8,6 +8,7 @@ export default {
     data() {
         return {
             store,
+            // --variabile per controllo slide correnti
             slidevisible: [0, 1, 2],
         }
     },
@@ -15,6 +16,7 @@ export default {
         doThings() {
             console.log("AppComponent does things");
         },
+        // metodi per controllo variabile per slide correnti
         back() {
             if (!(this.slidevisible.includes(0))) {
                 this.slidevisible.splice(2, 1);

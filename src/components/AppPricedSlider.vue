@@ -8,10 +8,12 @@ export default {
     data() {
         return {
             store,
+            // --variabile per controllo slide correnti
             slidevisible: [0, 1, 2, 3],
         }
     },
     methods: {
+        // --metodi per controllo slide correnti
         back() {
             if (!(this.slidevisible.includes(0))) {
                 this.slidevisible.splice(3, 1);
