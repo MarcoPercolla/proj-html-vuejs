@@ -7,12 +7,14 @@ export default {
     name: "AppFooter",
     data() {
         return {
-            store
+            store,
+            input: "",
         }
     },
     methods: {
         doThings() {
             console.log("AppFooter does things");
+            this.input = "";
         }
     },
     mounted() {
@@ -35,7 +37,7 @@ export default {
             <div class="footerCard">
                 <h3>Our Newsletter</h3>
                 <p>There are many variations of passages of form humour or randomised</p>
-                <input type="text">
+                <input type="text" @keyup.enter="doThings" v-model="input">
             </div>
 
         </div>

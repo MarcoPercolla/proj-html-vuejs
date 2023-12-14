@@ -34,11 +34,11 @@ export default {
     <header>
         <div class="headerTop">
             <div class="headerFidget">
-                <p>bla </p>
+                <p>Wishlist (0)</p>
                 <hr>
-                <p>blabla</p>
+                <p>Need Help ?</p>
             </div>
-            <p>call. 099099099099</p>
+            <p>Call 24/7 . 800-8754-987</p>
 
         </div>
 
