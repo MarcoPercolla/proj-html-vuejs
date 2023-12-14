@@ -48,8 +48,8 @@ export default {
 
                 <img :src="slide.immagine" alt="">
                 <h2>{{ slide.titolo }}</h2>
-                <button class="btn1" @click="back()">indietro</button>
-                <button class="btn2" @click="next()">avanti</button>
+                <div class="btn1" @click="back()" id="btnBack"></div>
+                <div class="btn2" @click="next()" id="btnNext"></div>
 
 
 
@@ -195,14 +195,32 @@ h2 {
 
 
 .btn1 {
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-image: url(public/immagini/arrow.png);
+    background-position: bottom left;
     position: absolute;
     top: 20rem;
     left: 10rem;
+
+    &:hover {
+        background-position: top left;
+    }
 }
 
 .btn2 {
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-image: url(public/immagini/arrow.png);
+    background-position: bottom right;
     position: absolute;
     top: 20rem;
     right: 10rem;
+
+    &:hover {
+        background-position: top right;
+    }
 }
 </style>

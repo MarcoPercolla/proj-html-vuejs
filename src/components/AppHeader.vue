@@ -79,9 +79,9 @@ export default {
                 </ul>
                 <div class="navIcons">
 
-                    <a href="">a</a>
-                    <a href="">jjjjjjjja</a>
-                    <a href="">a</a>
+                    <a href=""><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
+                    <a href=""><font-awesome-icon icon="fa-regular fa-user" /></a>
+                    <a href=""><font-awesome-icon icon="fa-solid fa-bag-shopping" /></a>
 
                 </div>
 

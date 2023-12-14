@@ -45,31 +45,31 @@ export default {
     <section>
         <div class="container">
             <div class="pointCard">
-                <img src="" alt="">
+                <div class="falseImage imageCard"></div>
                 <div>
-                    <h4>blabla</h4>
-                    <p>bla</p>
+                    <h4>Free Delivery</h4>
+                    <p>Free Shipping On All Order</p>
                 </div>
             </div>
             <div class="pointCard">
-                <img src="" alt="">
+                <div class="falseImage2 imageCard"></div>
                 <div>
-                    <h4>blabla</h4>
-                    <p>bla</p>
+                    <h4>Money Return</h4>
+                    <p>Back Guarantee in 7 days</p>
                 </div>
             </div>
             <div class="pointCard">
-                <img src="" alt="">
+                <div class="falseImage3 imageCard"></div>
                 <div>
-                    <h4>blabla</h4>
-                    <p>bla</p>
+                    <h4>Member Discount</h4>
+                    <p>On every order over $130.00</p>
                 </div>
             </div>
             <div class="pointCard">
-                <img src="" alt="">
+                <div class="falseImage4 imageCard"></div>
                 <div>
-                    <h4>blabla</h4>
-                    <p>bla</p>
+                    <h4>Return Policy</h4>
+                    <p>Support 24 hours a day</p>
                 </div>
             </div>
 
@@ -148,19 +148,60 @@ section {
 
 .pointCard {
     display: flex;
+    text-align: left;
+}
 
-    >img {
-        background-color: aqua;
-        height: 4rem;
-        width: 4rem;
+.imageCard {
+    width: 3rem;
+    height: 2.4rem;
+    margin: 0 1rem;
+}
 
+.falseImage {
+    background-image: url(public/immagini/service-icon.png);
+    background-position: top -113px right;
+    object-fit: cover;
 
-    }
+    &:hover {
+        background-position: top right;
 
-    >div {
-        margin: 0 1rem;
+        transition: 0.6s;
     }
 }
+
+.falseImage2 {
+    background-image: url(public/immagini/service-icon.png);
+    background-position: top -338px right;
+
+    &:hover {
+        background-position: top -225px right;
+        transition: 0.6s;
+
+    }
+}
+
+.falseImage3 {
+    background-image: url(public/immagini/service-icon.png);
+    background-position: top -564px right;
+
+    &:hover {
+        background-position: top -451px right;
+        transition: 0.6s;
+
+    }
+}
+
+.falseImage4 {
+    background-image: url(public/immagini/service-icon.png);
+    background-position: top -786px right;
+
+    &:hover {
+        background-position: top -673px right;
+        transition: 0.6s;
+
+    }
+}
+
 
 .type1 {
     width: 49.5%;
