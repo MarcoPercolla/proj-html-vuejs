@@ -37,7 +37,7 @@ export default {
             <div class="footerCard">
                 <h3>Our Newsletter</h3>
                 <p>There are many variations of passages of form humour or randomised</p>
-                <input type="text" @keyup.enter="doThings" v-model="input">
+                <input class="search" type="text" @keyup.enter="doThings" v-model="input">
             </div>
 
         </div>
@@ -93,6 +93,12 @@ footer {
     >ul {
         list-style: none;
         height: 12rem;
+        margin: 0.5rem 0;
+
+        >li {
+            margin: 0.5rem 0;
+
+        }
     }
 
 }
@@ -100,10 +106,22 @@ footer {
 a {
     text-decoration: none;
     color: grey;
+
+}
+
+p {
+    color: grey;
+    margin: 0.5rem 0;
 }
 
 .payImg {
     margin: 0.2rem;
+}
+
+.search {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 100%;
 }
 
 // ----sprites
