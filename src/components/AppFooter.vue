@@ -25,56 +25,24 @@ export default {
 <template>
     <footer>
         <div class="container topFoot">
-            <div class="footerCard">
-                <h3>blabla</h3>
+            <div class="footerCard" v-for="element in catalog">
+                <h3>{{ element.link }}</h3>
                 <ul>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
+                    <li v-for="subel in element.descrizione"><a href="#">{{ subel }}</a></li>
                 </ul>
             </div>
+
             <div class="footerCard">
-                <h3>blabla</h3>
-                <ul>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                </ul>
-            </div>
-            <div class="footerCard">
-                <h3>blabla</h3>
-                <ul>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                </ul>
-            </div>
-            <div class="footerCard">
-                <h3>blabla</h3>
-                <ul>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                    <li><a href="#">blabla</a></li>
-                </ul>
+                <h3>Our Newsletter</h3>
+                <p>There are many variations of passages of form humour or randomised</p>
+                <input type="text">
             </div>
 
         </div>
         <hr>
 
         <div class="container lowFoot">
-            <p>blabla</p>
+            <p>Copyright © 2023 Codezeel</p>
             <p>i</p>
 
         </div>
@@ -84,8 +52,8 @@ export default {
 
 <style scoped lang="scss">
 footer {
-    height: 22rem;
-    background-color: chocolate;
+    height: 30rem;
+    background-image: url(public/immagini/footer-bg.png);
 }
 
 .container {
@@ -97,16 +65,16 @@ footer {
 }
 
 .topFoot {
-    height: 20rem;
-    background-color: rgba(0, 0, 0, 0.14);
+    height: 27rem;
+
 }
 
 .lowFoot {
-    height: 2rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.14);
+
 }
 
 .footerCard {

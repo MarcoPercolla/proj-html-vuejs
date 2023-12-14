@@ -38,7 +38,7 @@ export default {
 	<main>
 		<AppMain />
 	</main>
-	<AppFooter />
+	<AppFooter :catalog="store.footerArray" />
 </template>
 
 <style lang="scss">

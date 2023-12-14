@@ -236,5 +236,25 @@ export const store = reactive({
 
 
     ],
+    footerArray: [
+        {
+            link: 'Address Info',
+            descrizione: ['60 29th Street San Francisco, CA 94110 507-Union Trade Center, United States of America', '(+00) 123-456-789', 'demo@example.com'],
+            icone: true
+
+        },
+        {
+            link: 'Informations',
+            descrizione: ['Bookmark', 'Feature', 'Sitemap', 'List', 'Contact us'],
+
+        },
+        {
+            link: 'Extras',
+            descrizione: ['Delivery', 'Cart', 'Term', 'Account', 'About us'],
+
+        },
+
+
+    ],
 
 });
