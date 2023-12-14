@@ -46,6 +46,74 @@ export const store = reactive({
         },
 
     ],
+    slides4: [
+        {
+            immagine: 'public/immagini/1.jpg',
+            immagine2: 'public/immagini/10.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+        {
+            immagine: 'public/immagini/2.jpg',
+            immagine2: 'public/immagini/11.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+        {
+            immagine: 'public/immagini/3.jpg',
+            immagine2: 'public/immagini/12.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+        {
+            immagine: 'public/immagini/4.jpg',
+            immagine2: 'public/immagini/13.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+        {
+            immagine: 'public/immagini/5.jpg',
+            immagine2: 'public/immagini/14.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+        {
+            immagine: 'public/immagini/6.jpg',
+            immagine2: 'public/immagini/15.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+        {
+            immagine: 'public/immagini/7.jpg',
+            immagine2: 'public/immagini/16.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+        {
+            immagine: 'public/immagini/8.jpg',
+            immagine2: 'public/immagini/17.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+        {
+            immagine: 'public/immagini/9.jpg',
+            immagine2: 'public/immagini/18.jpg',
+            vote: 3,
+            name: 'product n',
+            prezzo: 20,
+        },
+
+
+
+    ],
     slides5: [
         {
             immagine: '/immagini/cms-banner-03.jpg',
