@@ -47,6 +47,10 @@ export default {
             <div id="carouselElement" :class="i == slideNumber ? `visible` : `invisible`" v-for="(slide, i) in catalog">
 
                 <img :src="slide.immagine" alt="">
+                <div class="yellowBox">
+                    <h3>Upcoming Stock</h3>
+                </div>
+
                 <h2>{{ slide.titolo }}</h2>
                 <div class="btn1" @click="back()" id="btnBack"></div>
                 <div class="btn2" @click="next()" id="btnNext"></div>
@@ -81,8 +85,29 @@ img {
 
 }
 
+.yellowBox {
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    background-color: #f9aa01;
+    padding: 0.5rem 1rem;
+    transform: skew(20deg);
+    color: black;
+}
+
+h3 {
+
+    font-size: 1.7rem;
+    transform: skew(-20deg);
+
+    background-color: #f9aa01;
+    padding: 0.5rem 1rem;
+
+}
+
 h2 {
     position: absolute;
+    font-size: 3rem;
     top: 15rem;
     left: 15rem;
 }
