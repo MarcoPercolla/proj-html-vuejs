@@ -31,7 +31,7 @@ export const store = reactive({
     slides3: [
         {
             immagine: '/immagini/category-image-02-446x550_t.jpg',
-            titolo: 'Batman',
+            titolo: 'Call Of Duty',
 
         },
         {
@@ -41,7 +41,7 @@ export const store = reactive({
         },
         {
             immagine: '/immagini/category-image-03-446x550_t.jpg',
-            titolo: 'Dark Souls',
+            titolo: 'Jump Force',
 
         },
 
