@@ -143,6 +143,10 @@ hr {
             color: #ffffff;
             padding: 0 1.5rem;
 
+            &:hover {
+                color: #f9aa01;
+            }
+
         }
     }
 }
@@ -162,6 +166,10 @@ hr {
         text-decoration: none;
         color: #ffffff;
         margin: 0 0.5rem;
+
+        &:hover {
+            color: #f9aa01;
+        }
     }
 }
 
@@ -171,7 +179,6 @@ hr {
     z-index: 1000;
     margin-top: 5rem;
     font-size: 12px;
-
 
     border-radius: 0.1rem;
     border: solid 2px rgb(113, 98, 119);
