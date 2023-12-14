@@ -44,6 +44,7 @@ export default {
 
     },
     mounted() {
+        setInterval(this.next, 4000)
 
 
     }

@@ -36,7 +36,7 @@ export default {
     },
     mounted() {
 
-        this.doThings();
+        setInterval(this.next, 4000)
     }
 }
 </script>
