@@ -202,20 +202,31 @@ hr {
 
     display: flex;
     justify-content: space-around;
-    width: 8rem;
+    min-width: 8rem;
     z-index: 998;
     padding: 0.5rem 0;
+
+    h5 {
+        text-align: center;
+        font-size: 14px;
+        margin: 0 0.5rem;
+        color: #f9aa01;
+    }
 
 
     a {
         text-decoration: none;
         color: #ffffff;
-        padding: 0.5rem 0;
+
     }
 
     ul {
         list-style: none;
         text-align: center;
+
+        li {
+            margin: 0.2rem 0;
+        }
     }
 }
 

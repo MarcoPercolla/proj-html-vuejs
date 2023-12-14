@@ -286,10 +286,10 @@ export const store = reactive({
             link: 'ShortCode',
             descrizione2: [
                 {
-                    nome1: 'gallery',
-                    nome2: 'portfolio',
-                    gallery: ['2', '3', '4'],
-                    portfolio: ['2', '3', '4'],
+                    nome1: 'various',
+                    nome2: 'Same Bull',
+                    gallery: ['lorem ', 'accordion', 'example'],
+                    portfolio: ['Ratchet', 'Medievil', 'Sly Cooper'],
 
                 }
             ],
