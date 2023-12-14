@@ -50,6 +50,7 @@ export default {
             <img class="logo" src="../../public/immagini/logo.png" alt="">
             <nav class="navLinks">
                 <ul class="navContainer">
+                    <!-- richiama da props un elemento per ogni oggetto in arrayprops e aggiunge toggle per gestire apertura dropdown -->
                     <li class="linkList" v-for="(el, i) in catalog" @click="toggle(i)">
                         <a class="listName" href="#">{{ el.link }}</a>
                         <div class="tenda" :class="this.navIndex == i && this.navIndex != 0 ? `opened` : `closed`">
@@ -58,6 +59,7 @@ export default {
 
                                 <a class="tendinaLink" href="">{{ subEl }}</a>
                             </div>
+                            <!-- per gli elementi con descrizione2 in array(oggetto in oggetto) usa classe doppiatendina per flex -->
                             <div class="doppiaTendina" v-if="el.descrizione2" v-for="subEl2 in el.descrizione2"
                                 :class="this.navIndex == i ? `opened2` : `closed`">
                                 <div>
