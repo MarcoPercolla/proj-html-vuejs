@@ -48,7 +48,7 @@ export default {
     mounted() {
 
         this.doThings();
-        setInterval(this.next, 4000)
+        setInterval(this.next, 8000)
     }
 }
 </script>
