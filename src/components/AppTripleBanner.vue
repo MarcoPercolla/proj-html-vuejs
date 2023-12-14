@@ -26,7 +26,8 @@ export default {
     <div class="container">
         <div class="card" v-for="slide in catalog">
             <img class="type2" :src="slide.immagine" alt="">
-            <div>
+            <div class="animation"></div>
+            <div class="title">
                 <h3>{{ slide.titolo }}</h3>
 
             </div>
@@ -51,7 +52,7 @@ export default {
     height: 30rem;
     position: relative;
 
-    >div {
+    >.title {
         position: absolute;
         bottom: 0;
         height: 5rem;
@@ -70,5 +71,40 @@ export default {
     height: 100%;
     object-fit: cover;
 
+}
+
+.animation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(157, 157, 157);
+    opacity: 0;
+
+    &:hover {
+        animation: open 1s;
+    }
+
+
+}
+
+@keyframes open {
+    0% {
+        opacity: 0.4;
+        top: 50%;
+        height: 0%;
+    }
+
+    70% {
+        height: 100%;
+        top: 0;
+        opacity: 0.1;
+    }
+
+    100% {
+        top: 0;
+
+        opacity: 0;
+    }
 }
 </style>
