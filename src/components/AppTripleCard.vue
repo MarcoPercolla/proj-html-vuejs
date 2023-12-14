@@ -61,9 +61,9 @@ export default {
                 :class="this.slidevisible.includes(i) ? `visible` : `invisible`">
                 <img class="type4" :src="slide.immagine" alt="">
                 <div class="info">
-                    <img src="" alt="">
+                    <font-awesome-icon class="cardIcon" icon="fa-solid fa-calendar-days" />
                     <p>{{ slide.data }}</p>
-                    <img src="" alt="">
+                    <font-awesome-icon class="cardIcon" icon="fa-regular fa-comments" />
                     <p>{{ slide.commenti }} comment </p>
 
                 </div>
@@ -165,6 +165,11 @@ section {
         margin: 0 0.3rem;
     }
 
+}
+
+.cardIcon {
+    margin: 0 0.2rem;
+    color: #f9aa01;
 }
 
 // ----sprites
