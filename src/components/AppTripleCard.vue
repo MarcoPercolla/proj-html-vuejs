@@ -70,8 +70,11 @@ export default {
                 <h4>{{ slide.descrizione }}</h4>
 
             </div>
-            <button class="btn1" @click="back()">indietro</button>
-            <button class="btn2" @click="next()">avanti</button>
+            <div class="btn1" @click="back()" id="btnBack"></div>
+            <div class="btn2" @click="next()" id="btnNext"></div>
+
+
+
 
 
 
@@ -118,15 +121,35 @@ section {
 }
 
 .btn1 {
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-image: url(public/immagini/arrow.png);
+    background-position: bottom left;
+
     position: absolute;
     top: 6.5rem;
     left: -4rem;
+
+    &:hover {
+        background-position: top left;
+    }
 }
 
+
 .btn2 {
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-image: url(public/immagini/arrow.png);
+    background-position: bottom right;
     position: absolute;
     top: 6.5rem;
     right: -4rem;
+
+    &:hover {
+        background-position: top right;
+    }
 }
 
 .info {
@@ -143,4 +166,6 @@ section {
     }
 
 }
+
+// ----sprites
 </style>
