@@ -50,7 +50,7 @@ export default {
 main {
 	background-image: url(../public/immagini/body-bg.jpg);
 	background-size: cover;
-	padding-top: 10rem;
+	padding-top: 8rem;
 
 
 }
