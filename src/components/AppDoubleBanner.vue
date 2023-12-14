@@ -86,14 +86,24 @@ h3 {
 
         opacity: 0.2;
         right: -3rem;
+        width: 2%;
 
 
     }
 
-    90% {
+    10% {
+
+        opacity: 0.2;
+        right: -3rem;
+        width: 5%;
+
+
+    }
+
+    99% {
         opacity: 0.1;
-        transform: translate3d(100%, 0, 0);
-        width: 0;
+        transform: translate3d(500%, 0, 0);
+        width: 20%;
 
 
     }
@@ -101,7 +111,7 @@ h3 {
     100% {
         opacity: 0;
         left: 0;
-        width: 0;
+        width: 100%;
 
 
     }
