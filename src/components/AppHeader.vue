@@ -48,9 +48,9 @@ export default {
                 <ul class="navContainer">
                     <li class="linkList" v-for="(el, i) in catalog" @click="toggle(i)">
                         <a class="listName" href="#">{{ el.link }}</a>
-                        <div class="tenda">
+                        <div class="tenda" :class="this.navIndex == i && this.navIndex != 0 ? `opened` : `closed`">
                             <div class="tendina" v-if="el.descrizione" v-for="(subEl) in el.descrizione"
-                                :class="this.navIndex == i ? `opened` : `closed`">
+                                :class="this.navIndex == i ? `opened2` : `closed`">
 
                                 <a class="tendinaLink" href="">{{ subEl }}</a>
                             </div>
@@ -129,7 +129,7 @@ hr {
 
 .navLinks {
 
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 
@@ -148,8 +148,10 @@ hr {
 }
 
 .navContainer {
+    width: 70%;
     list-style: none;
     display: flex;
+    justify-content: space-around;
 
 }
 
@@ -165,15 +167,26 @@ hr {
 
 .tenda {
     position: absolute;
+    background-color: rgb(37, 22, 43);
+    z-index: 1000;
+    margin-top: 5rem;
+    font-size: 12px;
+
+
+    border-radius: 0.1rem;
+    border: solid 2px rgb(113, 98, 119);
+
+
+
 }
 
 .tendina {
-    background-color: red;
+
     width: 6rem;
     padding: 0.5rem;
     z-index: 999;
-    position: relative;
-    top: 1rem
+    padding: 0.5rem 0.8rem;
+
 }
 
 .tendinaLink {
@@ -181,16 +194,18 @@ hr {
     color: #ffffff;
     padding: 0.5rem 0;
 
+
 }
 
 .doppiaTendina {
-    background-color: red;
+
+
     display: flex;
     justify-content: space-around;
     width: 8rem;
     z-index: 998;
-    position: relative;
-    top: 1rem;
+    padding: 0.5rem 0;
+
 
     a {
         text-decoration: none;
@@ -205,14 +220,20 @@ hr {
 }
 
 .closed {
-    display: none;
+    opacity: 0;
+
+
+
 }
 
 .opened {
-    display: block;
+    opacity: 1;
+    margin-top: 1.7rem;
+    transition: 0.5s;
 }
 
 .opened2 {
-    display: flex;
+    opacity: 1;
+    transition: 1s;
 }
 </style>

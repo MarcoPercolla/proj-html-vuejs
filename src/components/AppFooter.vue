@@ -45,7 +45,14 @@ export default {
 
         <div class="container lowFoot">
             <p>Copyright © 2023 Codezeel</p>
-            <p>i</p>
+            <div>
+                <img class="payImg" id="visa1" width="1" height="2">
+                <img class="payImg" id="visa2" width="1" height="2">
+                <img class="payImg" id="visa3" width="1" height="2">
+                <img class="payImg" id="visa4" width="1" height="2">
+                <img class="payImg" id="visa5" width="1" height="2">
+                <img class="payImg" id="visa6" width="1" height="2">
+            </div>
 
         </div>
 
@@ -93,5 +100,46 @@ footer {
 a {
     text-decoration: none;
     color: grey;
+}
+
+.payImg {
+    margin: 0.2rem;
+}
+
+// ----sprites
+#visa1 {
+    width: 40px;
+    height: 24px;
+    background: url(public/immagini/payments.png) 0 0;
+}
+
+#visa2 {
+    width: 40px;
+    height: 24px;
+    background: url(public/immagini/payments.png) 0 -40px;
+}
+
+#visa3 {
+    width: 40px;
+    height: 24px;
+    background: url(public/immagini/payments.png) 0 -80px;
+}
+
+#visa4 {
+    width: 40px;
+    height: 24px;
+    background: url(public/immagini/payments.png) 0 -120px;
+}
+
+#visa5 {
+    width: 40px;
+    height: 24px;
+    background: url(public/immagini/payments.png) 0 -160px;
+}
+
+#visa6 {
+    width: 40px;
+    height: 24px;
+    background: url(public/immagini/payments.png) 0 -200px;
 }
 </style>
