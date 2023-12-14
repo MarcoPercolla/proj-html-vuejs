@@ -8,10 +8,12 @@ export default {
     data() {
         return {
             store,
+            // --variabile per indicare index tendina aperta(impostata a 100default perchè == false)
             navIndex: 100,
         }
     },
     methods: {
+        // --metodo per bindare successivamente al click su elemento navIndex e tendina aperta
         toggle(n) {
             if (this.navIndex == n) {
                 this.navIndex = 1000
@@ -32,8 +34,10 @@ export default {
 
 <template>
     <header>
+        <!-- parte solo layout del header -->
         <div class="headerTop">
             <div class="headerFidget">
+                <!-- qui avrei bindato {{valore}} al posto dello 0 se avessi creato un metodo per seguire wishlist-->
                 <p>Wishlist (0)</p>
                 <hr>
                 <p>Need Help ?</p>
@@ -93,6 +97,14 @@ export default {
 </template>
 
 <style scoped lang="scss">
+header {
+
+    position: fixed;
+    z-index: 1005;
+    width: 100%;
+    background-color: #1E1427
+}
+
 .headerTop {
     height: 3rem;
     padding: 0 5rem;
@@ -101,6 +113,7 @@ export default {
     justify-content: space-between;
     border-bottom: solid grey 1px;
     color: grey;
+
 
 }
 
@@ -119,6 +132,7 @@ hr {
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem;
+
 
 
 }
@@ -175,7 +189,7 @@ hr {
 
 .tenda {
     position: absolute;
-    background-color: rgb(37, 22, 43);
+    background-color: #1E1427;
     z-index: 1000;
     margin-top: 5rem;
     font-size: 12px;
